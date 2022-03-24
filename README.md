@@ -2,4 +2,12 @@
 ## Descrition
 ###### Sending mail template through SendGrid using Node Js
 ## Software name and Version
+###### Node.js v16.14.0
+## Installation
+###### Install Node.js
+## Steps-1
+###### Create SendGrid Account
+###### Signup in the sendgrid
+###### Authenticate Sender email address to verify and confirm
+###### Create an API key 
 
