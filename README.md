@@ -10,4 +10,7 @@
 ###### Signup in the sendgrid
 ###### Authenticate Sender email address to verify and confirm
 ###### Create an API key 
-
+## Step-2
+###### Create New project in Node Js
+###### Create a new Node.js project using the command
+``` npm install ```
