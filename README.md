@@ -37,17 +37,85 @@ responses and enables client-side protection against XSRF.
 ###### API key stored by the environment variable
 ``` const sendGridAPIKey = process.env.Send ```
 ## Steps -8
-## Creating an Object and add the required data as key value pair
+## Creating an Object 
 ``` const obj = {
     subject: "SendGrid Email Template",
     heading: "Welcome to SendGrid Email template",
-        description:"Hi Sooraj,"
+        description:"Hi Sooraj, Thank you for your interest in SendGrid Please confirm your Mail"
   
     button: "Confirm",
     acknowledgment: "Regards,",
-    name: "Varsha",
+    name: "Varsha P M",
 };
 ```
+## Steps -9
+## Create an HTML Template
+``` let htmlTemplate =`
+ <!DOCTYPE html>
+ <html>
+ <body>
+ <h1>${object.heading}</h1>
+
+ <button style="background-color: #4CAF50;
+ border: none;
+ color: white;
+ padding: 15px 32px;
+ text-align: center;
+ text-decoration: none;
+ display: inline-block;
+ font-size: 16px;
+">
+
+${object.Button}</button>
+<p>${obj.acknowledgment}</p>
+<p>${obj.name}</p>
+
+ </body>
+ </html>
+ `; ```
+## Steps -10
+## Create http request using Axios
+``` const callMethod = () => {
+    axios({
+        method: "post",
+        url: "https://api.sendgrid.com/v3/mail/send",
+        headers: {
+            Authorization:
+               `Bearer ${send_Api}`
+        },
+        data: {
+            personalizations: [
+                {
+                    to: [
+                        {
+                            email:"varshapm313@gmail.com",
+                            name:""                        },
+                        {
+                            email:"varshapm313@gmail.com",
+                            name: "Varsha"
+
+                        },
+
+                    ],
+                    subject: `${object.subject}`
+                }
+            ],
+            from: {
+                email: "varsha.monachan@urolime.com",
+                name: "varsha"
+            },
+            content: [{ type: "text/html", value: htmlTemplate }]
+        }
+    });
+};
+
+callMethod();
+```
+## Step-11
+## Run the Project
+######Send message using SengGrid.Use the command for Run the project 
+``` node service.js ```
+
 
 
 
