@@ -72,7 +72,8 @@ ${object.Button}</button>
 
  </body>
  </html>
- `; ```
+ `;  ```
+
 ## Steps -10
 ## Create http request using Axios
 ``` const callMethod = () => {
@@ -109,8 +110,9 @@ ${object.Button}</button>
     });
 };
 
-callMethod();
+callMethod(); 
 ```
+
 ## Step-11
 ## Run the Project
 ######Send message using SengGrid.Use the command for Run the project 
