@@ -50,6 +50,7 @@ responses and enables client-side protection against XSRF.
 ```
 ## Steps -9
 ## Create an HTML Template
+
 ``` let htmlTemplate =`
  <!DOCTYPE html>
  <html>
@@ -65,7 +66,6 @@ responses and enables client-side protection against XSRF.
  display: inline-block;
  font-size: 16px;
 ">
-
 ${object.Button}</button>
 <p>${obj.acknowledgment}</p>
 <p>${obj.name}</p>
