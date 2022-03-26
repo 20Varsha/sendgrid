@@ -31,8 +31,7 @@ responses and enables client-side protection against XSRF.
 ``` Send=*********API-key****************** ```
 ## Steps -6
 ## Import all the dependencies to the file service.js
-``` const axios = require('axios');
-const dotenv = require("dotenv") ```
+``` const axios = require('axios');const dotenv = require("dotenv") ```
 ## Steps -7
 ## Set the API key
 ###### API key stored by the environment variable
