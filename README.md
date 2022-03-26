@@ -51,7 +51,8 @@ responses and enables client-side protection against XSRF.
 ## Steps -9
 ## Create an HTML Template
 
-``` let htmlTemplate =`
+``` 
+let htmlTemplate =`
  <!DOCTYPE html>
  <html>
  <body>
@@ -72,7 +73,8 @@ ${object.Button}</button>
 
  </body>
  </html>
- `;  ```
+ `;  
+ ```
 
 ## Steps -10
 ## Create http request using Axios
