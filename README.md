@@ -37,6 +37,17 @@ responses and enables client-side protection against XSRF.
 ###### API key stored by the environment variable
 ``` const sendGridAPIKey = process.env.Send ```
 ## Steps -8
+## Creating an Object and add the required data as key value pair
+``` const obj = {
+    subject: "SendGrid Email Template",
+    heading: "Welcome to SendGrid Email template",
+        description:"Hi Sooraj,"
+  
+    button: "Confirm",
+    acknowledgment: "Regards,",
+    name: "Varsha",
+};
+```
 
 
 
